@@ -22,10 +22,10 @@
             />
 
         <ImageView
-            android:id="@+id/iv_logo_semen"
+            android:id="@+id/iv_logo_seng"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:src="@drawable/semen"
+            android:src="@drawable/logoSeng"
             android:layout_marginStart="35dp"
             android:layout_marginTop="35dp"
             app:layout_constraintTop_toBottomOf="@+id/logo"
@@ -42,14 +42,14 @@
             android:textSize="19sp"
             android:layout_marginTop="35dp"
             app:layout_constraintTop_toBottomOf="@id/logo"
-            app:layout_constraintStart_toEndOf="@id/iv_logo_semen"
+            app:layout_constraintStart_toEndOf="@id/iv_logo_seng"
             />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_semen"
+            android:id="@+id/rv_seng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/iv_logo_semen"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo_seng"
             app:layout_constraintStart_toStartOf="parent"
             tools:listitem="@layout/fragment_penjualan_semen"
             tools:itemCount="3">
@@ -61,7 +61,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/arrowright"
-            app:layout_constraintTop_toBottomOf="@id/rv_semen"
+            app:layout_constraintTop_toBottomOf="@id/rv_seng"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginStart="30dp">
@@ -72,7 +72,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/arrowleft"
-            app:layout_constraintTop_toBottomOf="@id/rv_semen"
+            app:layout_constraintTop_toBottomOf="@id/rv_seng"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="30dp">

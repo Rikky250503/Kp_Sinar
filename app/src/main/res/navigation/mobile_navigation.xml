@@ -8,13 +8,13 @@
     <fragment
         android:id="@+id/navigation_pesanan"
         android:name="com.example.projectkp.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_pesanan"
         tools:layout="@layout/fragment_pesanan_semen" />
 
     <fragment
         android:id="@+id/navigation_pemasukkan"
         android:name="com.example.projectkp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_pemasukkan"
         tools:layout="@layout/fragment_pemasukkan" />
 
 <!--    <fragment-->

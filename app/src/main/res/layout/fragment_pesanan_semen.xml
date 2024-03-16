@@ -2,14 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_penjualan"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frame_penjualan"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/logo"
@@ -52,7 +48,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/iv_logo_semen"
             app:layout_constraintStart_toStartOf="parent"
-            tools:listitem="@layout/fragment_penjualan_semen"
+            tools:listitem="@layout/list_item_pesanan_semen"
             tools:itemCount="3">
 
         </androidx.recyclerview.widget.RecyclerView>
@@ -78,6 +74,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="30dp">
         </ImageView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

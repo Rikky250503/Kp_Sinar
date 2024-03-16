@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/cancel"
+        android:elevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginEnd="40dp"
@@ -228,9 +229,47 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:src="@drawable/garis_lurus_rute"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tl_detail"
+        >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_icon_menunggu_pengiriman"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menunggu_pengiriman"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_garisRute"
+        >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_icon_pesanan_dikirim"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pesanan_dikirim"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_garisRute"
+        >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/iv_icon_pesanan_diterima"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pesanan_diterima"
+        android:layout_marginEnd="78dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_garisRute"
         >
     </ImageView>
 

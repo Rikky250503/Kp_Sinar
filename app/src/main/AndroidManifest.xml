@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProjectKP"
         tools:targetApi="31">
         <activity
+            android:name=".ui.TambahSupplierActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RestockActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.SidebarActivity"
             android:exported="false" />
         <activity

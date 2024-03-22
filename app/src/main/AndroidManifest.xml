@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProjectKP"
         tools:targetApi="31">
         <activity
+            android:name=".BarangMasukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PemberitahuanActivity"
+            android:exported="false" />
+        <activity
             android:name=".StokBarangActivity"
             android:exported="false" />
         <activity

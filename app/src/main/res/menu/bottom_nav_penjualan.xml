@@ -2,12 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_pesanan"
+        android:id="@+id/nav_penjualan_pesanan"
         android:icon="@drawable/pesanan"
         android:title="@string/title_pesanan" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/nav_penjualan_pemesananSupplier"
+        android:icon="@drawable/pemesanan_supplier"
+        android:title="@string/title_pemesananSupplier" />
+
+    <item
+        android:id="@+id/nav_penjualan_pemasukkan"
         android:icon="@drawable/pemasukkan"
         android:title="@string/title_pemasukkan" />
 

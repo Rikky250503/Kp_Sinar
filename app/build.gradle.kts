@@ -35,9 +35,12 @@ android {
 }
 
 dependencies {
-    
-    implementation(libs.appcompat)
-        implementation(libs.material)
+
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+
+    implementation(libs.material)
         implementation(libs.constraintlayout)
         implementation(libs.lifecycle.livedata.ktx)
         implementation(libs.lifecycle.viewmodel.ktx)

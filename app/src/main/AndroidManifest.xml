@@ -13,13 +13,16 @@
         android:theme="@style/Theme.ProjectKP"
         tools:targetApi="31">
         <activity
+            android:name=".BarangKeluarBelumDikirimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentBarangKeluar"
+            android:exported="false" />
+        <activity
             android:name=".SupplierActivity"
             android:exported="false" />
         <activity
             android:name=".DetailBarangKeluarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FragmentBarangKeluar"
             android:exported="false" />
         <activity
             android:name=".PemasukkanPenjualanActivity"

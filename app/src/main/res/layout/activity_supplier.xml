@@ -22,17 +22,18 @@
         android:text="SUPPLIER"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="80dp"
         android:textSize="25sp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <ScrollView
+        android:id="@+id/sv_supplier_baru"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tv_judulSupplierBaru"
-        app:layout_constraintBottom_toTopOf="@id/tv_total_restock"
+        app:layout_constraintBottom_toTopOf="@id/btn_tambah_supplier_baru"
         android:layout_marginBottom="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -47,7 +48,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:layout_marginHorizontal="36dp"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/img_3"
                 app:layout_constraintTop_toTopOf="@id/card_supplier_baru"
                 app:layout_constraintStart_toStartOf="parent"
@@ -153,47 +153,8 @@
 
     </ScrollView>
 
-    <TextView
-        android:id="@+id/strip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="____________________________________________________"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_total_restock"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/tv_total_restock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btn_selesai_restock"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/tv_angkaRupiah_restock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp.200.000"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btn_selesai_restock"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_selesai_restock"
+        android:id="@+id/btn_tambah_supplier_baru"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -202,7 +163,7 @@
         app:cornerRadius="12dp"
         android:textSize="24dp"
         android:textColor="@color/black"
-        android:text="Selesai"
+        android:text="Tambah"
         android:backgroundTint="#AEC8D7"
         android:textAllCaps="false"/>
 

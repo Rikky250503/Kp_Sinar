@@ -47,11 +47,58 @@
             android:id="@+id/btn_barang_masuk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:icon="@drawable/barang_masuk"
-            app:layout_constraintTop_toTopOf="@id/box_biru"
+            app:icon="@drawable/barang_masuk_putih"
+            app:iconGravity ="textStart"
+            app:layout_constraintTop_toTopOf="@id/tv_judulPilihan"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="80dp"
+            app:iconSize = "70dp"
+            android:backgroundTint="#193D5D"
+            />
+
+        <TextView
+            android:id="@+id/tv_tulisan_barang_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barang Masuk"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="70dp"
+            app:layout_constraintBottom_toBottomOf="@id/box_biru"
+            app:layout_constraintTop_toBottomOf="@id/btn_barang_masuk"
             app:layout_constraintStart_toStartOf="@id/box_biru"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_barang_keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/barang_keluar_putih"
+            app:iconGravity ="textStart"
+            app:layout_constraintTop_toTopOf="@id/tv_judulPilihan"
+            app:layout_constraintStart_toStartOf="@id/btn_barang_masuk"
             app:layout_constraintEnd_toEndOf="@id/box_biru"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="80dp"
+            app:iconSize = "70dp"
+            android:backgroundTint="#193D5D"
+            />
+
+        <TextView
+            android:id="@+id/tv_tulisan_barang_keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barang Keluar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/box_biru"
+            app:layout_constraintTop_toBottomOf="@id/btn_barang_masuk"
+            app:layout_constraintStart_toEndOf="@id/tv_tulisan_barang_masuk"
+            app:layout_constraintEnd_toEndOf="@id/box_biru"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

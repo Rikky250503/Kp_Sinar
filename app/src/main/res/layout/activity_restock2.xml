@@ -6,7 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RestockActivity">
+    tools:context=".RestockActivity2">
+
 
     <ImageView
         android:layout_width="130dp"
@@ -16,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_judul_restock"
+        android:id="@+id/tv_judul_restock2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RESTOCK"
@@ -29,103 +30,30 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/card_restock"
+            android:id="@+id/card_restock2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tv_judul_restock"
-            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_judul_restock2"
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_invoice_restock"
+                android:id="@+id/box_namabarang_restock"
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/img_3"
-                app:layout_constraintTop_toTopOf="@id/card_restock"
+                app:layout_constraintTop_toTopOf="@id/card_restock2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:elevation="12dp">
 
                 <TextView
-                    android:id="@+id/tv_inovoice_restock"
+                    android:id="@+id/tv_namaBarang_restock"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="24dp"
-                    android:text="No. Invoice"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_marginTop="15dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <EditText
-                    android:id="@+id/et_invoice_restock"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_inovoice_restock"
-                    android:layout_marginHorizontal="12dp"
-                    android:hint="Contoh: SGM-001 " />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_tgl_restock"
-                android:layout_width="match_parent"
-                android:layout_height="108dp"
-                android:layout_marginHorizontal="36dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/img_3"
-                app:layout_constraintTop_toBottomOf="@id/box_invoice_restock"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:elevation="12dp">
-
-                <TextView
-                    android:id="@+id/tv_tgl_restock"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="24dp"
-                    android:text="Tanggal"
-                    android:textSize="20dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:layout_marginTop="15dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <EditText
-                    android:id="@+id/et_tgl_restock"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_tgl_restock"
-                    android:layout_marginHorizontal="12dp"
-                    android:hint="Contoh:2024-03-02" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_supplier_restock"
-                android:layout_width="match_parent"
-                android:layout_height="108dp"
-                android:layout_marginHorizontal="36dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/img_3"
-                app:layout_constraintTop_toBottomOf="@id/box_tgl_restock"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:elevation="12dp">
-
-                <TextView
-                    android:id="@+id/tv_supplier_restock"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="24dp"
-                    android:text="Supplier"
+                    android:text="Nama Barang"
                     android:textSize="20dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -138,29 +66,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_supplier_restock"
+                    app:layout_constraintTop_toBottomOf="@id/tv_namaBarang_restock"
                     android:layout_marginHorizontal="12dp"
-                    android:hint="Contoh:PT.Cahaya Makmur"/>
+                    android:hint="Contoh:Seng atap 7'"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_craetedBy_restock"
+                android:id="@+id/box_banyakBarang_restock"
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/img_3"
-                app:layout_constraintTop_toBottomOf="@id/box_supplier_restock"
+                app:layout_constraintTop_toBottomOf="@id/box_namabarang_restock"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:elevation="12dp">
 
                 <TextView
-                    android:id="@+id/tv_createdBy_restock"
+                    android:id="@+id/tv_banyakBarang_restock"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="24dp"
-                    android:text="Created by"
+                    android:text="Harga Satuan"
                     android:textSize="20dp"
                     android:textColor="@color/black"
                     android:textStyle="bold"
@@ -173,25 +101,103 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_createdBy_restock"
+                    app:layout_constraintTop_toBottomOf="@id/tv_banyakBarang_restock"
                     android:layout_marginHorizontal="12dp"
-                    android:hint="Contoh:Ani" />
+                    android:hint="Contoh:2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/box_Kuantitas_restcok"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/img_3"
+                app:layout_constraintTop_toBottomOf="@id/box_banyakBarang_restock"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:elevation="12dp">
+
+                <TextView
+                    android:id="@+id/tv_Kuantitas_restock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:text="Kuantitas"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_Kuantitas_restock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_Kuantitas_restock"
+                    android:layout_marginHorizontal="12dp"
+                    android:hint="Contoh:2" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <TextView
+        android:id="@+id/strip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="____________________________________________________"
+        app:layout_constraintTop_toBottomOf="@id/card_restock2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_total_restock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/strip"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_angkaRupiah_restock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp.200.000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/strip"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_selesai_restock"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_restock"
         android:layout_marginHorizontal="72dp"
-        app:layout_constraintTop_toBottomOf="@id/card_restock"
         android:layout_marginTop="20dp"
         app:cornerRadius="12dp"
         android:textSize="24dp"
         android:textColor="@color/black"
-        android:text="NEXT"
-        android:backgroundTint="#AEC8D7"/>
+        android:text="Selesai"
+        android:backgroundTint="#AEC8D7"
+        android:textAllCaps="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

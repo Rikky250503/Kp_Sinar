@@ -51,9 +51,9 @@
             app:iconGravity ="textStart"
             app:layout_constraintTop_toTopOf="@id/tv_judulPilihan"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="45dp"
             android:layout_marginStart="80dp"
-            app:iconSize = "70dp"
+            app:iconSize = "60dp"
             android:backgroundTint="#193D5D"
             />
 

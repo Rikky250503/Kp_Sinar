@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotaPenjualan2Activity">
+    tools:context=".ui.Activity.NotaPenjualan2Activity">
 
 
     <ImageView

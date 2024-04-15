@@ -3,7 +3,7 @@
         <item
             android:id="@+id/navigation_stok"
             android:title="Stok Barang"
-            android:icon="@drawable/kardus" />
+            android:icon="@drawable/dus_stok" />
 
         <item
             android:id="@+id/navigation_transaksi"

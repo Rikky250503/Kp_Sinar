@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Sinar Matahari Prima</string>
     <string name="title_pesanan">Pesanan</string>
-    <string name="title_pemesananSupplier">PemesananSupplier</string>
+    <string name="title_pemesananSupplier">Pemesanan Supplier</string>
     <string name="title_pemasukkan">Pemasukkan</string>
 
     <string name="title_pimpinan_home">Home</string>

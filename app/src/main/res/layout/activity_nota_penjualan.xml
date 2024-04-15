@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotaPenjualanActivity">
+    tools:context=".ui.Activity.NotaPenjualanActivity">
 
 
     <ImageView
@@ -40,9 +40,45 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/card_nota1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/box_invoice_nota"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginHorizontal="36dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_3"
+                app:layout_constraintTop_toTopOf="@id/card_nota1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:elevation="12dp">
+
+                <TextView
+                    android:id="@+id/tv_invoice_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:text="No Invoice"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_invoice_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_invoice_nota"
+                    android:layout_marginHorizontal="12dp"
+                    android:hint="Contoh: SG001" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/box_namaCustomer_nota"
@@ -51,7 +87,7 @@
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/img_3"
-                app:layout_constraintTop_toTopOf="@id/card_nota1"
+                app:layout_constraintTop_toBottomOf="@id/box_invoice_nota"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:elevation="12dp">
@@ -70,7 +106,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/et_namacustomer_nota1"
+                    android:id="@+id/et_namacustomer_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="12dp"
@@ -81,7 +117,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_alamat_nota1"
+                android:id="@+id/box_alamat_nota"
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:layout_marginHorizontal="36dp"
@@ -93,7 +129,7 @@
                 android:elevation="12dp">
 
                 <TextView
-                    android:id="@+id/tv_alamat_nota1"
+                    android:id="@+id/tv_alamat_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="24dp"
@@ -106,29 +142,29 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/et_alamat_nota1"
+                    android:id="@+id/et_alamat_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_alamat_nota1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_alamat_nota"
                     android:layout_marginHorizontal="12dp"
                     android:hint="Contoh: Jl. Pasar 16 Ilit"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_nohp_nota1"
+                android:id="@+id/box_nohp_nota"
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/img_3"
-                app:layout_constraintTop_toBottomOf="@id/box_alamat_nota1"
+                app:layout_constraintTop_toBottomOf="@id/box_alamat_nota"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:elevation="12dp">
 
                 <TextView
-                    android:id="@+id/tv_nohp_nota1"
+                    android:id="@+id/tv_nohp_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="24dp"
@@ -141,30 +177,30 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/et_nohp_nota1"
+                    android:id="@+id/et_nohp_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_nohp_nota1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_nohp_nota"
                     android:layout_marginHorizontal="12dp"
                     android:hint="Contoh: 081234567890" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/box_tglPesan_nota1"
+                android:id="@+id/box_tglPesan_nota"
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:layout_marginHorizontal="36dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/img_3"
-                app:layout_constraintTop_toBottomOf="@id/box_nohp_nota1"
+                app:layout_constraintTop_toBottomOf="@id/box_nohp_nota"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:elevation="12dp">
 
                 <TextView
-                    android:id="@+id/tv_tglPesan_nota1"
+                    android:id="@+id/tv_tglPesan_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="24dp"
@@ -177,11 +213,11 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/et_tglPesan_nota1"
+                    android:id="@+id/et_tglPesan_nota"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="12dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_tglPesan_nota1"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tglPesan_nota"
                     android:layout_marginHorizontal="12dp"
                     android:hint="Contoh: 2024-03-02" />
 

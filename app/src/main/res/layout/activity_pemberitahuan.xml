@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="#D2E3EA"
     android:layout_height="match_parent"
-    tools:context=".StokBarangActivity">
+    tools:context=".ui.Activity.PemberitahuanActivity">
 
     <ImageView
         android:id="@+id/iv_logo_stok_pemberitahuan"

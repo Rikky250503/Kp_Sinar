@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import com.example.projectkp.R;
 import com.example.projectkp.databinding.FragmentPesananSeng1Binding;
 import com.example.projectkp.ui.Activity.RestockActivity;
-import com.example.projectkp.ui.Activity.TambahSupplierActivity;
 
 public class FragmentPesananSeng1 extends Fragment {
     private FragmentPesananSeng1Binding binding;

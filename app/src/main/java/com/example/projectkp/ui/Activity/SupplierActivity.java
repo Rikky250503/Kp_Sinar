@@ -28,18 +28,9 @@ public class SupplierActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_supplier);
 
-        Intent i = getIntent();
-        namaSupplier = i.getStringExtra("xNama");
-        noHP_supplier = i.getStringExtra("xNoHP");
-        alamat_supplier = i.getStringExtra("xAlamat");
-
         etNamaSupplier =findViewById(R.id.et_nama_supplier_baru);
         etNoHP_supplier = findViewById(R.id.et_nohp_supplier_baru);
         etAlamat_supplier = findViewById(R.id.et_alamat_supplier_baru);
-
-        etNamaSupplier.setText(namaSupplier);
-        etNoHP_supplier.setText(noHP_supplier);
-        etAlamat_supplier.setText(alamat_supplier);
 
         btnTambahSupplier = findViewById(R.id.btn_tambah_supplier_baru);
 
@@ -60,9 +51,8 @@ public class SupplierActivity extends AppCompatActivity {
                     etAlamat_supplier.setError("Alamat tidak boleh Kosong");
                 }
 //                else{
-//                    tambahSupplier(namaSupplier,noHP,alamat);
+//                    tambahSupplier();
 //                }
-
             }
         });
 
@@ -73,22 +63,21 @@ public class SupplierActivity extends AppCompatActivity {
         });
     }
 
-//    private void tambahSupplier(
-//            String nama_supplier, String noHP, String alamat_supplier){
+//    private void tambahSupplier(){
 //        RequestData ARD = RetroServer.konekRetrofit().create(RequestData.class);
-//        Call<ModelResponse> proses = ARD.ardUpdate(id_kost,nama_kost,foto_kost,tipe_kost,daerah_kost,alamat_kost,status_kost,harga_kost,deskripsi_kost);
+//    Call<ModelResponse> proses = ARD.ardCreate(namaSupplier,noHP_supplier,alamat_supplier);
 //
 //        proses.enqueue(new Callback<ModelResponse>() {
 //            @Override
 //            public void onResponse(Call<ModelResponse> call, Response<ModelResponse> response) {
 //                String kode = response.body().getKode();
 //                String pesan = response.body().getPesan();
-//                Toast.makeText(UbahActivity.this,"Kode: " + kode + " Pesan: " + pesan, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SupplierActivity.this,"Kode: " + kode + " Pesan: " + pesan, Toast.LENGTH_SHORT).show();
 //            }
 //
 //            @Override
 //            public void onFailure(Call<ModelResponse> call, Throwable t) {
-//                Toast.makeText(UbahActivity.this, "Gagal Menghubungi Server" , Toast.LENGTH_SHORT).show();
+//                Toast.makeText(SupplierActivity.this, "Gagal Menghubungi Server" , Toast.LENGTH_SHORT).show();
 //            }
 //        });
 //    }

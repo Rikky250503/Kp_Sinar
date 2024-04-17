@@ -28,23 +28,11 @@ public class NotaPenjualanActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_nota_penjualan);
 
-        Intent i = getIntent();
-        noInvoice_nota = i.getStringExtra("xNoInvoice_nota");
-        namaCustomer_nota = i.getStringExtra("xNamaCustomer_nota");
-        noHP_nota= i.getStringExtra("xNoHP_nota");
-        alamat_nota = i.getStringExtra("xAlamat_nota");
-        tglPesan_nota = i.getStringExtra("xtglPesan_nota");
-
         etNoInvoice_nota = findViewById(R.id.et_invoice_nota);
         etNamaCustomer_nota =findViewById(R.id.et_namacustomer_nota);
         etNoHP_nota = findViewById(R.id.et_nohp_nota);
         etAlamat_nota = findViewById(R.id.et_alamat_nota);
         etTglPesan_nota = findViewById(R.id.et_tglPesan_nota);
-
-        etNamaCustomer_nota.setText(namaCustomer_nota);
-        etNoHP_nota.setText(noHP_nota);
-        etAlamat_nota.setText(alamat_nota);
-        etTglPesan_nota.setText(tglPesan_nota);
 
         btnNextNota = findViewById(R.id.btn_next_nota);
 
@@ -60,11 +48,15 @@ public class NotaPenjualanActivity extends AppCompatActivity {
                 if(namaCustomer_nota.trim().isEmpty()){
                     etNamaCustomer_nota.setError("Nama Supplier tidak boleh Kosong");
                 }
-                else if(noHP_supplier.trim().isEmpty()){
-                    etNoHP_supplier.setError("No Handphone tidak boleh Kosong");
+                else if(namaCustomer_nota.trim().isEmpty()){
+                    etNamaCustomer_nota.setError("No Handphone tidak boleh Kosong");
                 }
-                else if(alamat_supplier.trim().isEmpty()){
-                    etAlamat_supplier.setError("Alamat tidak boleh Kosong");
+                else if(noHP_nota.trim().isEmpty()){
+                    etNoHP_nota.setError("noHP tidak boleh Kosong");
+                } else if (alamat_nota.trim().isEmpty()) {
+                    etAlamat_nota.setError("Alamat tidak boleh kosong");
+                } else if (tglPesan_nota.trim().isEmpty()) {
+                    etTglPesan_nota.setError("Tanggal pemesanan tidak boleh kosong");
                 }
 //                else{
 //                    tambahSupplier(namaSupplier,noHP,alamat);

@@ -73,8 +73,8 @@ public class SupplierActivity extends AppCompatActivity {
 //                String kode = response.body().getKode();
 //                String pesan = response.body().getPesan();
 //                Toast.makeText(SupplierActivity.this,"Kode: " + kode + " Pesan: " + pesan, Toast.LENGTH_SHORT).show();
+//                onBackPressed();
 //            }
-//
 //            @Override
 //            public void onFailure(Call<ModelResponse> call, Throwable t) {
 //                Toast.makeText(SupplierActivity.this, "Gagal Menghubungi Server" , Toast.LENGTH_SHORT).show();

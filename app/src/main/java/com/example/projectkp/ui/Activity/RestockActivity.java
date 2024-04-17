@@ -77,6 +77,9 @@ public class RestockActivity extends AppCompatActivity {
 //                String kode = response.body().getKode();
 //                String pesan = response.body().getPesan();
 //                Toast.makeText(RestockActivity.this,"Kode: " + kode + " Pesan: " + pesan, Toast.LENGTH_SHORT).show();
+//
+//                Intent intent = new Intent(RestockActivity.this,RestockActivity2.class);
+//                startActivity(intent);
 //            }
 //
 //            @Override

@@ -59,7 +59,7 @@ public class NotaPenjualanActivity extends AppCompatActivity {
                     etTglPesan_nota.setError("Tanggal pemesanan tidak boleh kosong");
                 }
 //                else{
-//                    tambahSupplier(namaSupplier,noHP,alamat);
+//                    tambahNota();
 //                }
             }
         });
@@ -70,4 +70,22 @@ public class NotaPenjualanActivity extends AppCompatActivity {
             return insets;
         });
     }
+//     private void tambahNota(){
+//        RequestData ARD = RetroServer.konekRetrofit().create(RequestData.class);
+//    Call<ModelResponse> proses = ARD.ardCreate(namaSupplier,noHP_supplier,alamat_supplier);
+//
+//        proses.enqueue(new Callback<ModelResponse>() {
+//            @Override
+//            public void onResponse(Call<ModelResponse> call, Response<ModelResponse> response) {
+//                String kode = response.body().getKode();
+//                String pesan = response.body().getPesan();
+//                Toast.makeText(SupplierActivity.this,"Kode: " + kode + " Pesan: " + pesan, Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ModelResponse> call, Throwable t) {
+//                Toast.makeText(SupplierActivity.this, "Gagal Menghubungi Server" , Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
 }

@@ -1,7 +1,5 @@
 package com.example.projectkp.ui.Activity;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,10 +15,12 @@ import com.example.projectkp.R;
 
 public class NotaPenjualanActivity extends AppCompatActivity {
 
-    String noInvoice_nota, namaCustomer_nota, noHP_nota, alamat_nota,tglPesan_nota;
-    Context ctx;
-    EditText etNoInvoice_nota, etNamaCustomer_nota,etNoHP_nota, etAlamat_nota, etTglPesan_nota;
-    Button btnNextNota;
+    String namaBarang_nota2,banyakBarang_nota2,hargaSatuan_nota2,notes;
+
+    EditText etNamaBarang_nota2,etBanyakBarang_nota2,etHargaSatuan_nota2,etNotes;
+    Button btnSelessai;
+    Integer banyakBarangInt_nota2;
+    Double hargaSatuanDoub_nota2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,41 +28,38 @@ public class NotaPenjualanActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_nota_penjualan);
 
-        etNoInvoice_nota = findViewById(R.id.et_invoice_nota);
-        etNamaCustomer_nota =findViewById(R.id.et_namacustomer_nota);
-        etNoHP_nota = findViewById(R.id.et_nohp_nota);
-        etAlamat_nota = findViewById(R.id.et_alamat_nota);
-        etTglPesan_nota = findViewById(R.id.et_tglPesan_nota);
+        etNamaBarang_nota2 = findViewById(R.id.et_namaBarang_nota2);
+        etBanyakBarang_nota2 = findViewById(R.id.et_banyakBarang);
+        etHargaSatuan_nota2 = findViewById(R.id.et_hargaSatuan);
+        etNotes = findViewById(R.id.et_notes);
 
-        btnNextNota = findViewById(R.id.btn_next_nota);
+        btnSelessai = findViewById(R.id.btn_selesai);
 
-        btnNextNota.setOnClickListener(new View.OnClickListener() {
+        btnSelessai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                noInvoice_nota =etNoInvoice_nota.getText().toString();
-                namaCustomer_nota = etNamaCustomer_nota.getText().toString();
-                noHP_nota = etNoHP_nota.getText().toString();
-                alamat_nota = etAlamat_nota.getText().toString();
-                tglPesan_nota = etTglPesan_nota.getText().toString();
+                namaBarang_nota2 = etNamaBarang_nota2.getText().toString();
+                banyakBarang_nota2 = etBanyakBarang_nota2.getText().toString();
+                hargaSatuan_nota2 = etHargaSatuan_nota2.getText().toString();
+                notes = etNotes.getText().toString();
 
-                if(namaCustomer_nota.trim().isEmpty()){
-                    etNamaCustomer_nota.setError("Nama Supplier tidak boleh Kosong");
+                if(namaBarang_nota2.trim().isEmpty()){
+                    etNamaBarang_nota2.setError("Nama Barang tidak boleh Kosong");
                 }
-                else if(namaCustomer_nota.trim().isEmpty()){
-                    etNamaCustomer_nota.setError("No Handphone tidak boleh Kosong");
+                else if(banyakBarang_nota2.trim().isEmpty()){
+                    etBanyakBarang_nota2.setError("Banyak barang tidak boleh Kosong");
                 }
-                else if(noHP_nota.trim().isEmpty()){
-                    etNoHP_nota.setError("noHP tidak boleh Kosong");
-                } else if (alamat_nota.trim().isEmpty()) {
-                    etAlamat_nota.setError("Alamat tidak boleh kosong");
-                } else if (tglPesan_nota.trim().isEmpty()) {
-                    etTglPesan_nota.setError("Tanggal pemesanan tidak boleh kosong");
+                else if(hargaSatuan_nota2.trim().isEmpty()){
+                    etHargaSatuan_nota2.setError("Harga satuan jual tidak boleh Kosong");
                 }
 //                else{
-//                    tambahNota();
+//                    banyakBarangInt_nota2 = Integer.parseInt(banyakBarang_nota2);
+//                    hargaSatuanDoub_nota2 = Double.parseDouble(hargaSatuan_nota2);
+//                    tambahNota2();
 //                }
             }
         });
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -70,9 +67,9 @@ public class NotaPenjualanActivity extends AppCompatActivity {
             return insets;
         });
     }
-//     private void tambahNota(){
+//         private void tambahNota2(){
 //        RequestData ARD = RetroServer.konekRetrofit().create(RequestData.class);
-//    Call<ModelResponse> proses = ARD.ardCreate(namaSupplier,noHP_supplier,alamat_supplier);
+//    Call<ModelResponse> proses = ARD.ardCreate(namaBarang_nota2,hargaSatuanDoub_nota2,banyakBarangInt_nota2);
 //
 //        proses.enqueue(new Callback<ModelResponse>() {
 //            @Override

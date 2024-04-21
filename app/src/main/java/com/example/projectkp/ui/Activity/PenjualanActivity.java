@@ -32,7 +32,7 @@ public class PenjualanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_penjualan);
 
         judulBarPenjualan = getSupportActionBar();
-        judulBarPenjualan.setTitle("Musik");
+        judulBarPenjualan.setTitle("Penjualan");
         bukaFragment(new PesananPenjualanFragment());
 
         bnvPenjualan = findViewById(R.id.bnv_penjualan);

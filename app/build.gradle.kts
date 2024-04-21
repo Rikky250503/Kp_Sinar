@@ -42,10 +42,11 @@ dependencies {
     implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation ("com.google.android.material:material:1.5.0")
 
+    implementation ("com.diogobernardino:williamchart:3.10.1")
 
     implementation(libs.material)
-        implementation(libs.constraintlayout)
-        implementation(libs.lifecycle.livedata.ktx)
+    implementation(libs.constraintlayout)
+    implementation(libs.lifecycle.livedata.ktx)
         implementation(libs.lifecycle.viewmodel.ktx)
         implementation(libs.navigation.fragment)
         implementation(libs.navigation.ui)
@@ -53,5 +54,8 @@ dependencies {
         testImplementation(libs.junit)
         androidTestImplementation(libs.ext.junit)
         androidTestImplementation(libs.espresso.core)
+
+
+
 
 }

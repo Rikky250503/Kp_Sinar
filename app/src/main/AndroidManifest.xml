@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjectKP"
         tools:targetApi="31">
         <activity
+            android:name=".ui.Activity.tesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.Activity.NotaPenjualanActivity"
             android:exported="false" />
         <activity
@@ -28,16 +31,10 @@
             android:name=".ui.Activity.PimpinanActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.Activity.NotaPenjualan2Activity"
-            android:exported="false" />
-        <activity
             android:name=".ui.Activity.RestockActivity2"
             android:exported="false" />
         <activity
             android:name=".ui.Activity.BarangKeluarBelumDikirimActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FragmentBarangKeluar"
             android:exported="false" />
         <activity
             android:name=".ui.Activity.SupplierActivity"
@@ -46,7 +43,7 @@
             android:name=".ui.Activity.DetailBarangKeluarActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.Activity.PemasukkanPenjualanActivity"
+            android:name=".ui.Activity.PemasukkanPenjualanFragment"
             android:exported="false" />
         <activity
             android:name=".ui.Activity.DetailBarangMasukActivity"
@@ -64,39 +61,36 @@
             android:name=".ui.Activity.PilihanActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.Activity.TambahSupplierActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.Activity.RestockActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.SidebarActivity"
             android:exported="false" />
         <activity
             android:name=".ui.TambahPenjualan"
             android:exported="false" />
         <activity
-            android:name=".ui.Activity.OrderPenjualan"
-            android:exported="false" />
-        <activity
-            android:name=".white_overlay"
+            android:name=".ui.Activity.PesananPenjualanFragment"
             android:exported="false" />
         <activity
             android:name=".ui.Activity.LoginActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".ui.Activity.Welcome"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/app_name">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
     </application>
 
 </manifest>

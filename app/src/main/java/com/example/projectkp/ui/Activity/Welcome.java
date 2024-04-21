@@ -16,12 +16,14 @@ import com.example.projectkp.R;
 public class Welcome extends AppCompatActivity {
 
     Button btn_getStarted;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_welcome);
+
+        //getActionBar().hide();
+        getSupportActionBar().hide();
 
         btn_getStarted = findViewById(R.id.btn_getStarted);
 

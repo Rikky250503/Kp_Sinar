@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.example.projectkp.R;
 import com.example.projectkp.databinding.FragmentPesananSeng1Binding;
 import com.example.projectkp.ui.Activity.RestockActivity;
+import com.example.projectkp.ui.Activity.SupplierActivity;
 
 public class FragmentPesananSeng1 extends Fragment {
     private FragmentPesananSeng1Binding binding;
@@ -96,7 +97,7 @@ public class FragmentPesananSeng1 extends Fragment {
         binding.addSupplierFabSeng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), TambahSupplierActivity.class));
+                startActivity(new Intent(getActivity(), SupplierActivity.class));
             }
         });
     }

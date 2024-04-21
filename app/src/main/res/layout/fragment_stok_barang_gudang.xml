@@ -70,7 +70,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/iv_logo_semen"
-                app:layout_constraintBottom_toTopOf="@id/tv_semen"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:listitem="@layout/list_item_stok_gudang"
                 tools:itemCount="10">

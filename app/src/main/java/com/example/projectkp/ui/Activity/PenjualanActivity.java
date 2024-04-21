@@ -38,9 +38,9 @@ public class PenjualanActivity extends AppCompatActivity {
         bnvPenjualan = findViewById(R.id.bnv_penjualan);
         bnvPenjualan.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment FrJual;
-                switch (menuItem.getItemId())
+                switch (item.getItemId())
                 {
                     case R.id.nav_penjualan_pesanan:
                         bukaFragment(new PesananPenjualanFragment());

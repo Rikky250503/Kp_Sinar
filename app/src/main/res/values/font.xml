@@ -12,8 +12,6 @@
             android:fontWeight="400"
             android:font="@font/inria_italic" />
 
-        <!-- Tambahkan variasi font lainnya sesuai kebutuhan -->
-
     </font-family>
 
 </resources>

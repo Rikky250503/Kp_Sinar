@@ -32,6 +32,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
@@ -42,7 +43,7 @@ dependencies {
     implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation ("com.google.android.material:material:1.5.0")
 
-    implementation ("com.diogobernardino:williamchart:3.10.1")
+//    implementation ("com.diogobernardino:williamchart:3.10.1")
 
     implementation(libs.material)
     implementation(libs.constraintlayout)
